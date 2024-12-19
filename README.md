@@ -8,8 +8,6 @@ El proyecto consiste en un fantasy de fútbol que utiliza inteligencia artificia
 
 El objetivo de este proyecto es aprender a integrar inteligencia artificial en una aplicación web moderna, utilizando tecnologías avanzadas y técnicas de extracción de datos.
 
----
-
 ## English
 
 Baboo Manager is a project developed for the Engineering Project course in the third year of Computer Engineering.
@@ -17,8 +15,6 @@ Baboo Manager is a project developed for the Engineering Project course in the t
 The project is a football fantasy game that leverages artificial intelligence to manage teams, analyze player data, and provide recommendations. Technologies such as `Next.js`, `Python`, and web scraping techniques are used to gather and process data.
 
 The goal of this project is to learn how to integrate artificial intelligence into a modern web application using advanced technologies and data extraction techniques.
-
----
 
 ## 日本語 (Japanese)
 
@@ -28,6 +24,7 @@ Baboo Managerは、コンピュータ工学の3年次の工学プロジェクト
 
 このプロジェクトの目的は、高度な技術とデータ抽出技術を使用して、モダンなウェブアプリケーションに人工知能を統合する方法を学ぶことです。
 
+---
 
 About `Next.js` (Not tested):
 
