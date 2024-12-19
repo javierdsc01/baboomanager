@@ -16,7 +16,7 @@ The project is a football fantasy game that leverages artificial intelligence to
 
 The goal of this project is to learn how to integrate artificial intelligence into a modern web application using advanced technologies and data extraction techniques.
 
-## 日本語 (Japanese)
+## 日本語
 
 Baboo Managerは、コンピュータ工学の3年次の工学プロジェクト科目のために開発されたプロジェクトです。
 
