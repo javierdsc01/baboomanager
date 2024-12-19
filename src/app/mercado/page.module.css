@@ -1,0 +1,409 @@
+@font-face {
+    font-family: 'BatmanForeverAlternate-Regular';
+    src: url('../../../public/batmfa__.ttf') format('truetype');
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgba(43, 45, 66, 0.90);
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(/fondo.webp);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.menuContainer {
+    width: 50%;
+    height: 90vh;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-collapse: collapse;
+    position: relative;
+    padding: 20px;
+    font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+    background-color: rgba(31, 32, 48, 0.8);
+    left: 0;
+    right: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 3%;
+    max-height: 100vh;
+    overflow: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.menuContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar1 {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar1 li {
+    padding: 10px;
+    width: auto;
+    display: inline-flex;
+    margin-inline: 20px;
+}
+
+.navbar1 button {
+    font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10%;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar1 button:hover {
+    background-color: rgba(237, 36, 57, 0.8);
+    transform: scale(1.05);
+}
+
+.navbar1 button.active {
+    background-color: rgba(237, 36, 57, 1);
+}
+
+.containerMercado {
+    overflow: auto;
+    max-height: 78vh;
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.containerMercado::-webkit-scrollbar {
+    background-color: #2B2D42;
+    width: 10px;
+    border-radius: 10px;
+}
+
+.containerMercado::-webkit-scrollbar-thumb {
+    background-color: rgba(237, 36, 57, 1);
+    border-radius: 10px;
+}
+
+.mercadoCompra {
+    width: 100%;
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    border-collapse: collapse;
+    font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+    background-color: rgba(31, 32, 48, 0);
+    left: 0;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 150vh;
+}
+
+.jugador {
+    background-color: #2B2D42;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.jugador:hover {
+    transform: translateY(-5px);
+}
+
+.jugador_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 13vh;
+    /* Establece la altura consistente */
+}
+
+.jugador_info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.jugador img {
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #ED2439;
+    padding: 10px 10px 0px 10px;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+
+.jugador h3 {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    display: grid;
+    justify-content: center;
+}
+
+.jugador p {
+    display: flex;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+}
+
+.jugador button {
+    width: 140px;
+    height: 45px;
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+    background-color: rgba(237, 36, 57, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.jugador button:hover {
+    background-color: rgba(237, 36, 57, 0.8);
+    transform: scale(1.05);
+}
+
+.jugador span {
+    color: #FDE047;
+}
+
+.mercado_vender,
+.mercado_historial {
+    width: 100%;
+}
+
+.imagen_perfil {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.Modal {
+    position: relative;
+    font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+    width: 600px;
+    height: auto;
+    padding: 40px;
+    background-color: #2B2D42;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modalImage {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #ED2439;
+    padding: 10px 10px 0px 10px;
+    border-radius: 20px;
+    box-sizing: content-box;
+}
+
+.historialButtons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.botonModal {
+    width: 300px;
+    height: 45px;
+    font-size: 20px;
+    font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+    background-color: rgba(237, 36, 57, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botonModal:hover {
+    background-color: rgba(237, 36, 57, 0.8);
+    transform: scale(1.05);
+}
+
+.slider {
+    margin-top: 5%;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 8px;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(237, 36, 57, 1);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(237, 36, 57, 1);
+    cursor: pointer;
+}
+
+.priceLabel {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.buttonClose {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(237, 36, 57, 1);
+    font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttonClose:hover {
+    background-color: rgba(237, 36, 57, 0.8);
+    transform: scale(1.05);
+}
+
+.extra {
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.extra span {
+    color: #ED2439;
+    font-weight: bold;
+}
+
+.extra span:hover {
+    text-decoration: underline;
+}
+
+.balance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.balance div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.balance div span {
+    font-size: 12px;
+}
+
+.botonAleatorio {
+    background-color: rgba(237, 36, 57, 1);
+    width: 80%;
+    margin: 4vh 0;
+    border-radius: 12px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.botonAleatorio:hover {
+    background-color: rgba(237, 36, 57, 0.8);
+}

@@ -1,0 +1,32 @@
+.player {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    background-color: red;
+    padding: 10px 10px 0px 10px;
+    border-radius: 12px;
+}
+
+.player h2 {
+    font-size: 16px;
+    text-align: center;
+    width: 100% !important;
+    padding: 0 !important;
+}

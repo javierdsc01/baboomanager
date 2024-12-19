@@ -1,0 +1,60 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  margin: 8px;
+  color: #fff;
+  padding: 0;
+}
+
+.cardTitle {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 8px 0;
+  margin: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.playerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #14213d;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.playerCard.highlight {
+  background-color: #ff0000;
+}
+
+.playerCard:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom: none;
+}
+
+.cardHeader img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.cardBody {
+  flex: 1;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.cardBody h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.cardBody p {
+  font-size: 16px;
+  margin: 4px 0 0;
+}

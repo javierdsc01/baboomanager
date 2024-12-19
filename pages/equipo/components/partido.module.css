@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(43, 45, 66, 0.90);
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/fondo.webp);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.hexagonos {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.contenedorPartidos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  width: 90%;
+}
+
+
+.partidos {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+
+
+
+  @media (max-width: 768px) {
+    .contenedorPartidos {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  }
+
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 40px;
+}
+
+.partidos>h2 {
+  font-size: 4.6em;
+  width: 100%;
+  padding: 40px;
+  text-align: left;
+}
+
+.hexagonos2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.contenedorPartidos>.BoxPartidos:nth-last-child(1):nth-child(3n + 1) {
+  grid-column: span 3;
+  justify-self: center;
+}
+
+
+@media (max-width: 768px) {
+
+  .hexagonos {
+    display: none;
+  }
+
+  .hexagonos2 {
+    top: -10%;
+    right: -10%;
+  }
+}

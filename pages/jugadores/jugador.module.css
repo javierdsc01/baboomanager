@@ -1,0 +1,210 @@
+.video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: opacity(0.05);
+    top: 0;
+    left: 0;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+}
+
+.playerPic {
+    aspect-ratio: 1/1;
+    height: unset;
+}
+
+.playerHeader {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    gap: 30px;
+}
+
+.playerHeaderInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.playerHeaderInfo p {
+    color: #ED2439;
+    font-size: 48px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+}
+
+.pais {
+    border-radius: 100%;
+}
+
+.playerNumber {
+    color: white;
+    font-size: 240px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+}
+
+.playerName {
+    color: white;
+    font-size: 80px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+    margin-right: 20px;
+}
+
+.playerSurname {
+    color: #ED2439;
+    font-size: 128px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+}
+
+.playerData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.playerDataItem {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+    color: #ED2439;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerDataItem span {
+    color: white;
+    font-size: 120px;
+}
+
+.playerStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heatmap {
+    width: 500px;
+    aspect-ratio: 500/323;
+    position: relative;
+}
+
+.pitch {
+    background-image: url('/pitch.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heatmapChart {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.previousMatches {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ED2439;
+    z-index: 0;
+    padding: 5vh 5vw;
+}
+
+.previousMatchesTitle {
+    color: white;
+    font-size: 96px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+}
+
+.previousMatchesContent {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.previousMatchesList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px
+}
+
+.expandedMatch {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B2D42;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 16px;
+    width: 70%;
+    position: relative;
+}
+
+.expandedMatchHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.expandedMatchHeader p {
+    font-size: 64px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+}
+
+.expandedMatchStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftStats,
+.rightStats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rightStats {
+    width: 50%;
+}
+
+.expandedMatchStat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expandedMatchStatTitle {
+    font-size: 36px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+    color: #ED2439;
+}
+
+.expandedMatchStatValue {
+    font-size: 36px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+}
+
+.expandedMatchPlayer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

@@ -1,0 +1,104 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 45, 66, 0.90);
+    min-height: 100vh;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/fondo.webp);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.laliga {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hexagonos {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.cambiarPerfil {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.label {
+    color: white;
+    font-size: 20px;
+
+}
+
+.title {
+    width: max-content;
+    text-align: center;
+    color: white;
+    background: transparent;
+    font-size: 20px;
+    border: white 2px solid;
+    padding: 12px;
+}
+
+.avatarPlaceholder {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+    border-radius: 50%;
+}
+
+.imagePerfil {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 80px;
+}
+
+.imagePerfil img {
+
+    border-radius: 100%;
+}
+
+.cerrarSesion {
+    color: white;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.EliminarCuenta {
+    color: #EF233C;
+    font-size: 40px;
+}
+
+.guardarCambios {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(38, 41, 81, 0.9);
+    cursor: pointer;
+}
+
+.guardarCambios:hover {
+    background-color: rgba(39, 44, 100, 0.9);
+}

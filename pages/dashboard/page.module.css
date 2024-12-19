@@ -1,0 +1,363 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(43, 45, 66, 0.90);
+
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/fondo.webp);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+}
+
+.laliga {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.hexagonos {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.buscador {
+  border-radius: 60px;
+  border: 1px solid #EDF2F4;
+  margin: auto;
+  width: 858.019px;
+  height: 60px;
+  flex-shrink: 0;
+  background: #2B2D42;
+}
+
+.miLiga {
+  background-color: #EF233C;
+  width: 661.98px;
+  height: 138px;
+  border-radius: 16px;
+  align-items: center;
+  padding: 15px;
+  font-size: 20px;
+
+
+}
+
+.CrearLiga {
+  background-color: #EF233C;
+  width: 354px;
+  height: 86.92px;
+  border-radius: 16px;
+  padding: 15px;
+  font-size: 20px;
+  align-items: center;
+  border-color: #EF233C;
+  ;
+
+
+}
+
+.title2 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 20PX;
+  margin-top: 6px;
+
+
+}
+
+.title3 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+
+
+}
+
+.title4 {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+
+
+}
+
+.TituloJornada {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+
+
+}
+
+.fechaHora {
+
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+
+
+}
+
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+  background: #2B2D42;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.closeButton {
+  background: none;
+  color: white;
+  background-color: #EF233C;
+  padding: 5px;
+  border-radius: 100%;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.form button {
+  padding: 10px;
+  background-color: #2B2D42;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.box {
+
+  background-color: #FFFFFF;
+  width: 161px;
+  height: 70px;
+  margin-top: 12px;
+
+}
+
+.boxInput {
+
+  background-color: #8D99AE;
+  width: 420px;
+  height: 40px;
+  margin-top: 12px;
+  color: #000000;
+  border-radius: 8px;
+  border-color: #2B2D42;
+  font-size: 20px;
+
+
+}
+
+.BoxPartidos {
+  background-color: #FFFFFF;
+  height: 170px;
+  border-radius: 14px;
+  padding: 15px;
+  font-size: 20px;
+  margin: 10px;
+  padding: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.contenedorPartidos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.infoLigas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  gap: 0px;
+  margin: 10px;
+
+}
+
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-Right: -50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: 'rgba(0, 0, 0, 0.5)';
+  z-index: 1000;
+}
+
+
+.hexagonos2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 50px;
+  background-color: rgb(239, 35, 60);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  background-color: #EDF2F4;
+  font-size: 20px;
+  color: #2B2D42;
+  font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+
+}
+
+.button {
+  width: 100%;
+  padding: 7px 0px;
+  background-color: #2B2D42;
+  color: white;
+  border: 0;
+  border-radius: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "BatmanForeverAlternate-Regular", Helvetica, sans-serif;
+
+
+}
+
+.button:hover {
+  background-color: #313454;
+}
+
+.text {
+  font-size: 19;
+  color: #D9D9D9;
+}
+
+.text a {
+  color: #2B2D42;
+  transition: 0.2s all ease-in-out;
+}
+
+.text a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.competicion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .login {
+    width: 85%;
+  }
+
+  .hexagonos {
+    display: none;
+  }
+
+  .hexagonos2 {
+    top: -10%;
+    right: -10%;
+  }
+}

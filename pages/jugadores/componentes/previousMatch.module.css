@@ -1,0 +1,31 @@
+.previousMatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2D42;
+    gap: 20px;
+    padding: 20px 25px;
+    border-radius: 16px
+}
+
+.previousMatchHeader {
+    font-size: 24px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+}
+
+.previousMatchResult {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.previousMatchResult p {
+    font-size: 64px;
+    font-family: 'NFL_Jacksonville_Jaguars';
+}
+
+.previousMatchTeam {
+    object-fit: contain;
+
+}

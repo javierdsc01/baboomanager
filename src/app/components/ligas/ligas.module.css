@@ -1,0 +1,21 @@
+.miLiga {
+    background-color: #EF233C;
+    width: 661.98px;
+    height: 138px;
+    border-radius: 16px;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+
+
+}
+
+.infoLigas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+
+}

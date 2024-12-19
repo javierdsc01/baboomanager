@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'BatmanForeverAlternate-Regular';
+    src: url('../../../public/batmfa__.ttf') format('truetype');
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    background-color: rgba(43, 45, 66, 0.90);
+    font-family: 'BatmanForeverAlternate-Regular';
+    src: url('../../../public/batmfa__.ttf') format('truetype');
+  }
+
+  .container h1{
+    padding-top: 8%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    font-weight: normal;
+    font-size: 35px;
+  }
+
+  .container button{
+    font-size: 30px;
+    font-family: 'BatmanForeverAlternate-Regular';
+    src: url('../../../public/batmfa__.ttf') format('truetype');
+    background-color: transparent;
+    border-color: transparent;
+    text-align: left;
+  }
+
+  .bloque_liga{
+    height: 75%;
+    background-color: #1F2030;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 25% 50%;
+    align-items: center;
+    justify-content: start;
+    margin: 2%;
+    padding-left: 3%;
+  }
+
+
+  @media (max-width: 768px) {
+    .login {
+      width: 85%;
+    }
+  
+    .hexagonos {
+      display: none;
+    }
+  
+    .hexagonos2 {
+      top: -10%;
+      right: -10%;
+    }
+  }

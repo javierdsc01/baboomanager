@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    font-size: 30px;
+    color: white;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+.recomendaciones {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 500px;
+    justify-content: space-between;
+}
+
+.recomendacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 30%;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #EF233C;
+    color: white;
+}
+
+.fondo {
+    background-color: #2B2D42;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.recomendacion div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.recomendacion button {
+    background-color: white;
+    color: #EF233C;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.recomendacion button:hover {
+    background-color: #2B2D42;
+}

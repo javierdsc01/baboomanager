@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  background-color: rgba(43, 45, 66, 0.90);
+  font-family: 'BatmanForeverAlternate-Regular';
+}
+
+.laliga {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.error p {
+  font-size: 24px;
+  color: red
+}

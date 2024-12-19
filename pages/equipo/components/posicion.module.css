@@ -1,0 +1,19 @@
+.player_pos {
+    padding-bottom: 1%;
+    padding-top: 3%;
+}
+
+.player_group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    background-color: #353752;
+    border-radius: 20px;
+    width: 100%;
+    gap: 50px;
+}
+
+.player_group h2 {
+    padding-right: 4%;
+    width: 10%;
+}

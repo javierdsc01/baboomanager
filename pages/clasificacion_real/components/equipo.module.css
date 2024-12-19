@@ -1,0 +1,23 @@
+.tabla_contenido {
+    height: 58px; 
+    border-radius: 20px;   
+    background-color: #1F2030;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 40px;
+  }
+
+  .flex1 td{
+    padding-right: 10px;
+  }
+
+  .puntos{
+    width: 100px;
+  }

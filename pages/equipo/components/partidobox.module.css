@@ -1,0 +1,57 @@
+.BoxPartidos {
+  background-color: #c40031;
+  height: 270px;
+  border-radius: 14px;
+  padding: 15px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.teamLogo {
+  width: 50px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.details {
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  padding: 10px;
+
+}
+
+
+.score {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.date {
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
+@media (max-width: 460px) {
+  .BoxPartidos {
+    width: 100%;
+    height: auto;
+  }
+}

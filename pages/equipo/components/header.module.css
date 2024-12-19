@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'BatmanForeverAlternate-Regular';
+  src: url('../../../public/batmfa__.ttf') format('truetype');
+}
+
+.cuerpo {
+  position: relative;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 90% 20%;
+  padding-left: 3%;
+}
+
+.cuerpo_color {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(43, 45, 66, 0.7);
+  z-index: 1;
+}
+
+.cuerpo_bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(https://www.socios.com/wp-content/uploads/2023/08/civitas-metropolitano.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.info_equipo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 35% 40%;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.nombre h1 {
+  margin-bottom: 3%;
+}
+
+.options {
+  display: flex;
+  list-style-type: none;
+  align-items: flex-start;
+  z-index: 1;
+  gap: 2%;
+  position: relative;
+  height: fit-content;
+}
+
+.line {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  height: 8px;
+  background-color: white;
+  z-index: -1;
+}
+
+.options li {
+  border-bottom: 8px solid white;
+  padding-bottom: 1%;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 8px solid #EF233C !important;
+}
+
+.options li div {
+  font-size: 4vh;
+  font-weight: bold;
+  font-family: 'BatmanForeverAlternate-Regular';
+}
+
+.options div:hover {
+  font-weight: bold;
+  color: rgb(239, 35, 60);
+}
